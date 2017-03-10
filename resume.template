@@ -163,6 +163,46 @@
 	</section>
 	{{/if}}
 
+	{{#if resume.projects.length}}
+	<section id="projects" class="row">
+		<aside class="col-sm-3">
+			<h3>Projects</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			{{#each resume.projects}}
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>{{name}}</span>
+					<span class="date">
+						{{startDate}} — {{endDate}}
+					</span>
+				</h4>
+				{{#website}}
+				<div class="website pull-right">
+					<a href="{{.}}">{{.}}</a>
+				</div>
+				{{/website}}
+				{{#summary}}
+				<div class="summary">
+					<p>{{.}}</p>
+				</div>
+				{{/summary}}
+				{{#if highlights.length}}
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					{{#highlights}}
+					<li class="bullet">{{.}}</li>
+					{{/highlights}}
+				</ul>
+				{{/if}}
+			</div>
+			{{/each}}
+			</div>
+		</div>
+	</section>
+	{{/if}}
+
 	{{#if resume.volunteer.length}}
 	<section id="volunteer" class="row">
 		<aside class="col-sm-3">

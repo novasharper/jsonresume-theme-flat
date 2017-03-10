@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-flat",
-  "version": "0.3.7",
-  "description": "A theme for JSON Resume",
-  "author": "Mattias Erming",
+  "name": "jsonresume-theme-flat-novasharper",
+  "version": "0.1",
+  "description": "My version of the flat theme",
+  "author": "Patrick Long",
   "repository": {
     "type": "git",
-    "url": "http://github.com/erming/jsonresume-theme-flat"
+    "url": "http://github.com/novasharper/jsonresume-theme-flat-novasharper"
   },
   "scripts": {
     "start": "resume serve"
