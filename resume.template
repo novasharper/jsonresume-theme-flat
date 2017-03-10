@@ -183,6 +183,11 @@
 					<a href="{{.}}">{{.}}</a>
 				</div>
 				{{/website}}
+				{{#title}}
+				<div class="title">
+					{{.}}
+				</div>
+				{{/title}}
 				{{#summary}}
 				<div class="summary">
 					<p>{{.}}</p>
